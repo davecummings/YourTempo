@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>filename</key>
+		<string>Take a Walk</string>
+		<key>tempo</key>
+		<real>101</real>
+	</dict>
+	<dict>
+		<key>filename</key>
+		<string>Some Nights</string>
+		<key>tempo</key>
+		<real>108</real>
+	</dict>
+	<dict>
+		<key>filename</key>
+		<string>I Want to Break Free</string>
+		<key>tempo</key>
+		<real>108.7</real>
+	</dict>
+	<dict>
+		<key>filename</key>
+		<string>Suddenly I See</string>
+		<key>tempo</key>
+		<real>100.4</real>
+	</dict>
+	<dict>
+		<key>filename</key>
+		<string>Got To Get You Into My Life</string>
+		<key>tempo</key>
+		<real>137.9</real>
+	</dict>
+	<dict>
+		<key>filename</key>
+		<string>You Make My Dreams</string>
+		<key>tempo</key>
+		<real>83.5</real>
+	</dict>
+	<dict>
+		<key>filename</key>
+		<string>50 Ways to Leave Your Lover</string>
+		<key>tempo</key>
+		<real>102.1</real>
+	</dict>
+</array>
+</plist>

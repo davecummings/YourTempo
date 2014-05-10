@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		557E78CE18FC69410097A1B1 /* VisualizerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 557E78CD18FC69410097A1B1 /* VisualizerView.mm */; };
+		557E78D018FC69CF0097A1B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557E78CF18FC69CF0097A1B1 /* QuartzCore.framework */; };
+		557E78D418FC6AA40097A1B1 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 557E78D218FC6AA40097A1B1 /* MeterTable.cpp */; };
+		557E78D618FC74620097A1B1 /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 557E78D518FC74620097A1B1 /* particleTexture.png */; };
+		55FCC14918F4741900CED389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC14818F4741900CED389 /* Foundation.framework */; };
+		55FCC14B18F4741900CED389 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC14A18F4741900CED389 /* CoreGraphics.framework */; };
+		55FCC14D18F4741900CED389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC14C18F4741900CED389 /* UIKit.framework */; };
+		55FCC15318F4741900CED389 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC15118F4741900CED389 /* InfoPlist.strings */; };
+		55FCC15518F4741900CED389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCC15418F4741900CED389 /* main.m */; };
+		55FCC15918F4741900CED389 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCC15818F4741900CED389 /* AppDelegate.m */; };
+		55FCC15C18F4741900CED389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC15A18F4741900CED389 /* Main.storyboard */; };
+		55FCC15F18F4741900CED389 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCC15E18F4741900CED389 /* ViewController.m */; };
+		55FCC16118F4741900CED389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC16018F4741900CED389 /* Images.xcassets */; };
+		55FCC16818F4741900CED389 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC16718F4741900CED389 /* XCTest.framework */; };
+		55FCC16918F4741900CED389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC14818F4741900CED389 /* Foundation.framework */; };
+		55FCC16A18F4741900CED389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC14C18F4741900CED389 /* UIKit.framework */; };
+		55FCC18118F474E800CED389 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCC18018F474E800CED389 /* AudioPlayer.m */; };
+		55FCC18318F4750900CED389 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC18218F4750900CED389 /* AVFoundation.framework */; };
+		55FCC18518F475C700CED389 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC18418F475C700CED389 /* MediaPlayer.framework */; };
+		55FCC18818F4767D00CED389 /* StepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCC18718F4767D00CED389 /* StepCounter.m */; };
+		55FCC18A18F4769600CED389 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FCC18918F4769600CED389 /* CoreMotion.framework */; };
+		55FCC19618F4789600CED389 /* 50 Ways to Leave Your Lover.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC18C18F4789600CED389 /* 50 Ways to Leave Your Lover.m4a */; };
+		55FCC19818F4789600CED389 /* Got To Get You Into My Life.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC18E18F4789600CED389 /* Got To Get You Into My Life.m4a */; };
+		55FCC19918F4789600CED389 /* I Want to Break Free.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC18F18F4789600CED389 /* I Want to Break Free.m4a */; };
+		55FCC19A18F4789600CED389 /* Some Nights.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC19018F4789600CED389 /* Some Nights.m4a */; };
+		55FCC19B18F4789600CED389 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC19118F4789600CED389 /* Songs.plist */; };
+		55FCC19C18F4789600CED389 /* Suddenly I See.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC19218F4789600CED389 /* Suddenly I See.m4a */; };
+		55FCC19D18F4789600CED389 /* Take a Walk.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC19318F4789600CED389 /* Take a Walk.m4a */; };
+		55FCC19F18F4789600CED389 /* You Make My Dreams.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55FCC19518F4789600CED389 /* You Make My Dreams.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55FCC16B18F4741900CED389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FCC13D18F4741900CED389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55FCC14418F4741900CED389;
+			remoteInfo = YourTempo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		557E78CC18FC69410097A1B1 /* VisualizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizerView.h; sourceTree = "<group>"; };
+		557E78CD18FC69410097A1B1 /* VisualizerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VisualizerView.mm; sourceTree = "<group>"; };
+		557E78CF18FC69CF0097A1B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		557E78D218FC6AA40097A1B1 /* MeterTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeterTable.cpp; sourceTree = "<group>"; };
+		557E78D318FC6AA40097A1B1 /* MeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterTable.h; sourceTree = "<group>"; };
+		557E78D518FC74620097A1B1 /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
+		55FCC14518F4741900CED389 /* YourTempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourTempo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FCC14818F4741900CED389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55FCC14A18F4741900CED389 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55FCC14C18F4741900CED389 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55FCC15018F4741900CED389 /* YourTempo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YourTempo-Info.plist"; sourceTree = "<group>"; };
+		55FCC15218F4741900CED389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55FCC15418F4741900CED389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55FCC15618F4741900CED389 /* YourTempo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YourTempo-Prefix.pch"; sourceTree = "<group>"; };
+		55FCC15718F4741900CED389 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55FCC15818F4741900CED389 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55FCC15B18F4741900CED389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55FCC15D18F4741900CED389 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55FCC15E18F4741900CED389 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		55FCC16018F4741900CED389 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		55FCC16618F4741900CED389 /* YourTempoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourTempoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FCC16718F4741900CED389 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		55FCC17F18F474E800CED389 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		55FCC18018F474E800CED389 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		55FCC18218F4750900CED389 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55FCC18418F475C700CED389 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		55FCC18618F4767D00CED389 /* StepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCounter.h; sourceTree = "<group>"; };
+		55FCC18718F4767D00CED389 /* StepCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepCounter.m; sourceTree = "<group>"; };
+		55FCC18918F4769600CED389 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		55FCC18C18F4789600CED389 /* 50 Ways to Leave Your Lover.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "50 Ways to Leave Your Lover.m4a"; sourceTree = "<group>"; };
+		55FCC18E18F4789600CED389 /* Got To Get You Into My Life.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Got To Get You Into My Life.m4a"; sourceTree = "<group>"; };
+		55FCC18F18F4789600CED389 /* I Want to Break Free.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I Want to Break Free.m4a"; sourceTree = "<group>"; };
+		55FCC19018F4789600CED389 /* Some Nights.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Some Nights.m4a"; sourceTree = "<group>"; };
+		55FCC19118F4789600CED389 /* Songs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Songs.plist; sourceTree = "<group>"; };
+		55FCC19218F4789600CED389 /* Suddenly I See.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Suddenly I See.m4a"; sourceTree = "<group>"; };
+		55FCC19318F4789600CED389 /* Take a Walk.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Take a Walk.m4a"; sourceTree = "<group>"; };
+		55FCC19518F4789600CED389 /* You Make My Dreams.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "You Make My Dreams.m4a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55FCC14218F4741900CED389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557E78D018FC69CF0097A1B1 /* QuartzCore.framework in Frameworks */,
+				55FCC18A18F4769600CED389 /* CoreMotion.framework in Frameworks */,
+				55FCC18518F475C700CED389 /* MediaPlayer.framework in Frameworks */,
+				55FCC18318F4750900CED389 /* AVFoundation.framework in Frameworks */,
+				55FCC14B18F4741900CED389 /* CoreGraphics.framework in Frameworks */,
+				55FCC14D18F4741900CED389 /* UIKit.framework in Frameworks */,
+				55FCC14918F4741900CED389 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FCC16318F4741900CED389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FCC16818F4741900CED389 /* XCTest.framework in Frameworks */,
+				55FCC16A18F4741900CED389 /* UIKit.framework in Frameworks */,
+				55FCC16918F4741900CED389 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557E78D118FC6AA40097A1B1 /* MeterTable */ = {
+			isa = PBXGroup;
+			children = (
+				557E78D218FC6AA40097A1B1 /* MeterTable.cpp */,
+				557E78D318FC6AA40097A1B1 /* MeterTable.h */,
+			);
+			path = MeterTable;
+			sourceTree = "<group>";
+		};
+		55FCC13C18F4741900CED389 = {
+			isa = PBXGroup;
+			children = (
+				55FCC14E18F4741900CED389 /* YourTempo */,
+				55FCC14718F4741900CED389 /* Frameworks */,
+				55FCC14618F4741900CED389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55FCC14618F4741900CED389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55FCC14518F4741900CED389 /* YourTempo.app */,
+				55FCC16618F4741900CED389 /* YourTempoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55FCC14718F4741900CED389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				557E78CF18FC69CF0097A1B1 /* QuartzCore.framework */,
+				55FCC18918F4769600CED389 /* CoreMotion.framework */,
+				55FCC18418F475C700CED389 /* MediaPlayer.framework */,
+				55FCC18218F4750900CED389 /* AVFoundation.framework */,
+				55FCC14818F4741900CED389 /* Foundation.framework */,
+				55FCC14A18F4741900CED389 /* CoreGraphics.framework */,
+				55FCC14C18F4741900CED389 /* UIKit.framework */,
+				55FCC16718F4741900CED389 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55FCC14E18F4741900CED389 /* YourTempo */ = {
+			isa = PBXGroup;
+			children = (
+				557E78D518FC74620097A1B1 /* particleTexture.png */,
+				557E78D118FC6AA40097A1B1 /* MeterTable */,
+				55FCC18B18F4789600CED389 /* Songs */,
+				55FCC15718F4741900CED389 /* AppDelegate.h */,
+				55FCC15818F4741900CED389 /* AppDelegate.m */,
+				55FCC15A18F4741900CED389 /* Main.storyboard */,
+				55FCC15D18F4741900CED389 /* ViewController.h */,
+				55FCC15E18F4741900CED389 /* ViewController.m */,
+				55FCC16018F4741900CED389 /* Images.xcassets */,
+				55FCC14F18F4741900CED389 /* Supporting Files */,
+				55FCC17F18F474E800CED389 /* AudioPlayer.h */,
+				55FCC18018F474E800CED389 /* AudioPlayer.m */,
+				55FCC18618F4767D00CED389 /* StepCounter.h */,
+				55FCC18718F4767D00CED389 /* StepCounter.m */,
+				557E78CC18FC69410097A1B1 /* VisualizerView.h */,
+				557E78CD18FC69410097A1B1 /* VisualizerView.mm */,
+			);
+			path = YourTempo;
+			sourceTree = "<group>";
+		};
+		55FCC14F18F4741900CED389 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55FCC15018F4741900CED389 /* YourTempo-Info.plist */,
+				55FCC15118F4741900CED389 /* InfoPlist.strings */,
+				55FCC15418F4741900CED389 /* main.m */,
+				55FCC15618F4741900CED389 /* YourTempo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55FCC18B18F4789600CED389 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				55FCC18C18F4789600CED389 /* 50 Ways to Leave Your Lover.m4a */,
+				55FCC18E18F4789600CED389 /* Got To Get You Into My Life.m4a */,
+				55FCC18F18F4789600CED389 /* I Want to Break Free.m4a */,
+				55FCC19018F4789600CED389 /* Some Nights.m4a */,
+				55FCC19118F4789600CED389 /* Songs.plist */,
+				55FCC19218F4789600CED389 /* Suddenly I See.m4a */,
+				55FCC19318F4789600CED389 /* Take a Walk.m4a */,
+				55FCC19518F4789600CED389 /* You Make My Dreams.m4a */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55FCC14418F4741900CED389 /* YourTempo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FCC17718F4741900CED389 /* Build configuration list for PBXNativeTarget "YourTempo" */;
+			buildPhases = (
+				55FCC14118F4741900CED389 /* Sources */,
+				55FCC14218F4741900CED389 /* Frameworks */,
+				55FCC14318F4741900CED389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YourTempo;
+			productName = YourTempo;
+			productReference = 55FCC14518F4741900CED389 /* YourTempo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55FCC16518F4741900CED389 /* YourTempoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FCC17A18F4741900CED389 /* Build configuration list for PBXNativeTarget "YourTempoTests" */;
+			buildPhases = (
+				55FCC16218F4741900CED389 /* Sources */,
+				55FCC16318F4741900CED389 /* Frameworks */,
+				55FCC16418F4741900CED389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55FCC16C18F4741900CED389 /* PBXTargetDependency */,
+			);
+			name = YourTempoTests;
+			productName = YourTempoTests;
+			productReference = 55FCC16618F4741900CED389 /* YourTempoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55FCC13D18F4741900CED389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Dave Cummings";
+				TargetAttributes = {
+					55FCC14418F4741900CED389 = {
+						DevelopmentTeam = C36Z3ES9RF;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					55FCC16518F4741900CED389 = {
+						TestTargetID = 55FCC14418F4741900CED389;
+					};
+				};
+			};
+			buildConfigurationList = 55FCC14018F4741900CED389 /* Build configuration list for PBXProject "YourTempo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55FCC13C18F4741900CED389;
+			productRefGroup = 55FCC14618F4741900CED389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55FCC14418F4741900CED389 /* YourTempo */,
+				55FCC16518F4741900CED389 /* YourTempoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55FCC14318F4741900CED389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FCC19A18F4789600CED389 /* Some Nights.m4a in Resources */,
+				55FCC19918F4789600CED389 /* I Want to Break Free.m4a in Resources */,
+				55FCC16118F4741900CED389 /* Images.xcassets in Resources */,
+				557E78D618FC74620097A1B1 /* particleTexture.png in Resources */,
+				55FCC19F18F4789600CED389 /* You Make My Dreams.m4a in Resources */,
+				55FCC19B18F4789600CED389 /* Songs.plist in Resources */,
+				55FCC19D18F4789600CED389 /* Take a Walk.m4a in Resources */,
+				55FCC15318F4741900CED389 /* InfoPlist.strings in Resources */,
+				55FCC19C18F4789600CED389 /* Suddenly I See.m4a in Resources */,
+				55FCC15C18F4741900CED389 /* Main.storyboard in Resources */,
+				55FCC19618F4789600CED389 /* 50 Ways to Leave Your Lover.m4a in Resources */,
+				55FCC19818F4789600CED389 /* Got To Get You Into My Life.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FCC16418F4741900CED389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55FCC14118F4741900CED389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FCC18818F4767D00CED389 /* StepCounter.m in Sources */,
+				55FCC15F18F4741900CED389 /* ViewController.m in Sources */,
+				557E78CE18FC69410097A1B1 /* VisualizerView.mm in Sources */,
+				55FCC15918F4741900CED389 /* AppDelegate.m in Sources */,
+				55FCC15518F4741900CED389 /* main.m in Sources */,
+				55FCC18118F474E800CED389 /* AudioPlayer.m in Sources */,
+				557E78D418FC6AA40097A1B1 /* MeterTable.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FCC16218F4741900CED389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55FCC16C18F4741900CED389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55FCC14418F4741900CED389 /* YourTempo */;
+			targetProxy = 55FCC16B18F4741900CED389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55FCC15118F4741900CED389 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55FCC15218F4741900CED389 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		55FCC15A18F4741900CED389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55FCC15B18F4741900CED389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55FCC17518F4741900CED389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55FCC17618F4741900CED389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55FCC17818F4741900CED389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YourTempo/YourTempo-Prefix.pch";
+				INFOPLIST_FILE = "YourTempo/YourTempo-Info.plist";
+				PRODUCT_NAME = YourTempo;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55FCC17918F4741900CED389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YourTempo/YourTempo-Prefix.pch";
+				INFOPLIST_FILE = "YourTempo/YourTempo-Info.plist";
+				PRODUCT_NAME = YourTempo;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		55FCC17B18F4741900CED389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YourTempo.app/YourTempo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YourTempo/YourTempo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YourTempoTests/YourTempoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		55FCC17C18F4741900CED389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YourTempo.app/YourTempo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YourTempo/YourTempo-Prefix.pch";
+				INFOPLIST_FILE = "YourTempoTests/YourTempoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55FCC14018F4741900CED389 /* Build configuration list for PBXProject "YourTempo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FCC17518F4741900CED389 /* Debug */,
+				55FCC17618F4741900CED389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FCC17718F4741900CED389 /* Build configuration list for PBXNativeTarget "YourTempo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FCC17818F4741900CED389 /* Debug */,
+				55FCC17918F4741900CED389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FCC17A18F4741900CED389 /* Build configuration list for PBXNativeTarget "YourTempoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FCC17B18F4741900CED389 /* Debug */,
+				55FCC17C18F4741900CED389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55FCC13D18F4741900CED389 /* Project object */;
+}
