@@ -3,8 +3,8 @@ YourTempo
 
 YourTempo adjusts the playback speed of the song you're listening to be perfectly in-sync with your footsteps.
 
-Created by Dave Cummings
-Carnegie Mellon University
+Created by Dave Cummings  
+Carnegie Mellon University  
 david.h.cummings@me.com
 
 YourTempo requires the M7 coprocessor, which is only supported on iPhone 5s, iPad Air, and iPad Mini with Retina Display.
